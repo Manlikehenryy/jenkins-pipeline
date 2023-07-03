@@ -27,7 +27,7 @@ services:
       APP_NAME: Laravel
       APP_ENV: local
       APP_KEY: base64:ZjjV4u2lW3uYS6K6T1GCtB89srKRu17Wf1Wd2ZbHxQQ=
-      APP_DEBUG: true
+      APP_DEBUG: 'true'
       APP_URL: http://13.53.89.47
       LOG_CHANNEL: stack
       DB_CONNECTION: mysql
