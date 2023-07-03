@@ -23,7 +23,24 @@ services:
     image: 'manlikehenry/laravel-app'
     volumes:
       - . /var/www/html/
-
+    environment:
+      APP_NAME: Laravel
+      APP_ENV: local
+      APP_KEY: base64:ZjjV4u2lW3uYS6K6T1GCtB89srKRu17Wf1Wd2ZbHxQQ=
+      APP_DEBUG: 'true'
+      APP_URL: http://13.53.89.47
+      LOG_CHANNEL: stack
+      DB_CONNECTION: mysql
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      DB_DATABASE: laravel-db
+      DB_USERNAME: root
+      DB_PASSWORD:
+      BROADCAST_DRIVER: log
+      CACHE_DRIVER: file
+      QUEUE_CONNECTION: sync
+      SESSION_DRIVER: file
+      SESSION_LIFETIME: 120
 
     ports:
       - "80:80"
